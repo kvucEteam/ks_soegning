@@ -1,0 +1,104 @@
+
+.container-fluid:nth-of-type(2) {
+    margin-top: 0px;
+}
+
+.btn{
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+h1 {
+	margin: 40px 0px; 
+	line-height: 1em;
+}
+h2 {
+	margin: 30px 0px 20px 0px; 
+	line-height: 1em; 
+}
+h4 {
+	margin: 0px 0px 20px 0px; 
+	line-height: 1em;
+}
+
+
+.btnPressed{
+    background-color: #666666;
+    border: 1px solid #666666;
+    color: #fff;
+}
+.btnPressed:hover {
+	background-color: #969696;
+    border: 1px solid #969696;
+    color: #FFF;
+}
+
+.QuestionTask{
+	color: #000;
+}
+
+
+/***********************************************/
+/*
+	Således sættes farve på placeholders:
+	https://css-tricks.com/snippets/css/style-placeholder-text/
+*/
+
+
+.ErrorColor ::-webkit-input-placeholder {
+   color: #ed3e3a;
+}
+
+.ErrorColor :-moz-placeholder { /* Firefox 18- */
+   color: #ed3e3a;  
+}
+
+.ErrorColor ::-moz-placeholder {  /* Firefox 19+ */
+   color: #ed3e3a; 
+}
+
+.ErrorColor :-ms-input-placeholder {  
+   color: #ed3e3a;  
+}
+
+
+/***********************************************/
+
+.ErrorColorHeading{
+	color: #ed3e3a; 
+}
+
+
+#SearchText{
+	margin-bottom: 10px;
+	width: 50%;
+}
+
+.DropdownContainer{
+	margin-bottom: 10px;
+}
+
+.ErrMsg{
+	display: none;
+	color: #F00;
+}
+
+.mindmap{
+	cursor: pointer;
+}
+
+.modal-dialog {
+  width: 90%;
+  height: 100%;
+  padding: 0;
+}
+
+.modal-content {
+  
+  border-radius: 0;
+}
+
+img{
+	width:100%;
+	cursor: pointer;
+}
