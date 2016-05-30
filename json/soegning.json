@@ -1,0 +1,107 @@
+{
+  "userInterface": {
+    "header": "Informationssøgning på google",
+    "subHeader": "Du skal søge på følgende måde..."
+  },
+  "key_probs": [
+    {
+      "problem": "Samfundsskabt ulighed",
+      "sub_problem": [
+        "Det gode samfund",
+        "Har vesten monopol på civilisation ",
+        "Økonomisk og social ulighed(den samfundsskabte ulighed)",
+        "mænd og kvinder ",
+        "sociale klasser ",
+        "U - lande og I - lande ",
+        "Minoritet og majoritet ",
+        "Demokrati ",
+        "USA(områdestudium)"
+      ]
+    },
+    {
+      "problem": "Frihed og lighed",
+      "sub_problem": [
+        "Det gode samfund",
+        "Har vesten monopol på civilisation ",
+        "Økonomisk og social ulighed(den samfundsskabte ulighed)",
+        "mænd og kvinder ",
+        "sociale klasser ",
+        "U - lande og I - lande ",
+        "minoritet og majoritet ",
+        "Demokrati ",
+        "USA(områdestudium)"
+      ]
+    }
+  ],
+  "DropDowns": [
+    {
+      "header": "Dropdown 1 headertext...",
+      "obj": {
+        "id": "Dropdown1",
+        "class": "Dropdown",
+        "selected": "0",
+        "options": [
+          {
+            "value": "Vælg filtre"
+          },
+          {
+            "value": "danmarkshistorien.dk"
+          },
+          {
+            "value": "faktalink.dk"
+          },
+          {
+            "value": "videnskab.dk"
+          },
+          {
+            "value": "aargang.dk"
+          },
+          {
+            "value": "kvinfo.dk"
+          },
+          {
+            "value": "arbejdermuseet.dk"
+          },
+          {
+            "value": "gravsted.dk"
+          },
+          {
+            "value": "emu.dk"
+          },
+          {
+            "value": "arbejdermuseet.dk"
+          },
+          {
+            "value": "museernepaakanten.dk"
+          },
+          {
+            "value": "natmus.dk"
+          }
+        ]
+      }
+    },
+    {
+      "header": "Dropdown 2 headertext...",
+      "obj": {
+        "id": "Dropdown2",
+        "class": "Dropdown",
+        "selected": "0",
+        "options": [
+          {
+            "value": "vælg materialetype"
+          },
+          {
+            "class": "btnPressed",
+            "value": "Almindelig søgning"
+          },
+          {
+            "value": "Billede"
+          },
+          {
+            "value": "Video"
+          }
+        ]
+      }
+    }
+  ]
+}

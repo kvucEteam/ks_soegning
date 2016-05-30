@@ -1,0 +1,167 @@
+{
+    "Key_probs": [{
+            "nodes": {
+                "Key_problem": {
+                    "color": "#05a0a8",
+                    "label": "Samfundsskabt ulighed",
+                    "shape": "dot"
+                },
+                "sub_1": {
+                    "label": "Det gode samfund"
+                },
+                "sub_2": {
+                    "label": "Økonomisk ulighed"
+                },
+                "sub_3": {
+                    "label": "Kønspolitik"
+                },
+                "sub_4": {
+                    "label": "Minoriteter"
+                },
+                "sub_5": {
+                    "label": "U-lande"
+                }
+
+            },
+            "edges": {
+                "Key_problem": {
+                    "sub_1": {},
+                    "sub_2": {},
+                    "sub_3": {},
+                    "sub_4": {},
+                    "sub_5": {}
+                }
+            }
+        }, {
+            "nodes": {
+                "Key_problem": {
+                    "color": "#05a0a8",
+                    "label": "Miljø og Klima",
+                    "shape": "dot"
+                },
+                "sub_1": {
+                    "label": "Økologi"
+                },
+                "sub_2": {
+                    "label": "Bæredygtighed"
+                }
+
+            },
+            "edges": {
+                "Key_problem": {
+                    "sub_1": {},
+                    "sub_2": {}
+                }
+            }
+        }, {
+            "nodes": {
+                "Key_problem": {
+                    "color": "#05a0a8",
+                    "label": "Frihed og lighed",
+                    "shape": "dot"
+                },
+                "sub_1": {
+                    "label": "Demokrati"
+                },
+                "sub_2": {
+                    "label": "Menneskerettigheder"
+                },
+                "sub_3": {
+                    "label": "USA"
+                },
+                "sub_4": {
+                    "label": "Ytringsfrihed"
+                }
+
+            },
+            "edges": {
+                "Key_problem": {
+                    "sub_1": {},
+                    "sub_2": {},
+                    "sub_3": {},
+                    "sub_4": {}
+                }
+            }
+        }
+
+    ],
+    "DropDowns": [{
+        "header": "Dropdown 1 headertext...",
+        "obj": {
+            "id": "Dropdown1",
+            "class": "Dropdown",
+            "selected": "0",
+            "options": [{
+                "value": "danmarkshistorien.dk"
+            }, {
+                "value": "faktalink.dk"
+            }, {
+                "value": "videnskab.dk"
+            }, {
+                "value": "aargang.dk"
+            }, {
+                "value": "kvinfo.dk"
+            }, {
+                "value": "arbejdermuseet.dk"
+            }, {
+                "value": "gravsted.dk"
+            }, {
+                "value": "emu.dk"
+            }, {
+                "value": "arbejdermuseet.dk"
+            }, {
+                "value": "museernepaakanten.dk"
+            }, {
+                "value": "natmus.dk"
+            }]
+        }
+    }, {
+        "header": "Dropdown 2 headertext...",
+        "obj": {
+            "id": "Dropdown2",
+            "class": "Dropdown",
+            "selected": "0",
+            "options": [{
+                "value": "vælg materialetype"
+            }, {
+                "class": "btnPressed",
+                "value": "Almindelig søgning"
+            }, {
+                "value": "Billede"
+            }, {
+                "value": "Video"
+            }]
+        }
+    }, {
+        "header": "Dropdown 2 headertext...",
+        "obj": {
+            "id": "Dropdown3",
+            "class": "Dropdown",
+            "selected": "0",
+            "options": [{
+
+                "value": "Kritik"
+            }, {
+                "value": "debat"
+            }, {
+                "value": "statistik"
+            }, {
+                "value": "debat"
+            }, {
+                "value": "holdning"
+            }, {
+                "value": "kronik"
+            }, {
+                "value": "artikel"
+            }, {
+                "value": "kommentar"
+            }, {
+                "value": "debatindlæg"
+            }]
+        }
+    }],
+    "userInterface": {
+        "header": "Informationssøgning på google",
+        "subHeader": "Du skal søge på følgende måde..."
+    }
+}

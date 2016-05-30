@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Søgning - industrialisering</title>
+    <title>Søg efter bilagsmateriale</title>
     <!-- http://www.robotstxt.org/meta.html -->
     <meta name="robots" content="noindex, nofollow" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -14,67 +14,48 @@
 
 <body>
     <div class="container-fluid">
-        <div class="col-md-8 col-sm-12">
-            <h1 id="XXX_header">Søgning om emnet 'industrialiseringen'</h1>
-            <h4 id="XXX_subHeader"> </h4>
-            <h2>1. Mindmap til inspiration</h2>
-            <h4>Du kan bruge mindmappet til at få inspiration til gode søgeord indenfor emnet.</h4>
-            <div class="mindmap"> <img data-toggle='modal' data-target='#myModal' class="img-responsive" src="img/mindmap_mockup.png" alt="" /> </div>
-            <h2>2. Find baggrundsmateriale </h2>
-            <h4>Nu skal du lave en bred søgning for at opnå baggrundsviden om industrialiseringen.</h4>
-            <script>
-            (function() {
-                var cx = '010570756016901960454:awrba6qqnss';
-                var gcse = document.createElement('script');
-                gcse.type = 'text/javascript';
-                gcse.async = true;
-                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                    '//cse.google.com/cse.js?cx=' + cx;
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(gcse, s);
-            })();
-            </script>
-            <gcse:search></gcse:search>
-            <!-- 
-                    <div id="DataInput">
-                    </div>
- -->
-            <h2>3. Find kildemateriale </h2>
-            <h4>Til sidst søger du i dybden for at finde specifikke kilder til emnet.</h4>
-            <h4 id="DataBaseHeading">Vælg en eller flere databaser herunder</h4>
+        <div class="col-md-12 col-sm-12 main_content">
+            <h1 id="XXX_header">Søg efter bilagsmateriale</h1>
+            <div class=""></div>
+            <h3>Vælg et overordnet emne</h4>
+            <div class="nav_container"></div>
+            <h3>Vælg underemner </h3>
+            <div class="canvas_container">
+            </div>
+            <h3 id="FilterHeading">Vælg en eller flere filtre herunder</h3>
+            <div id="Filters">
+                <span class="ErrMsg"></span>
+            </div>
+            <h3 id="DataBaseHeading">Søg på disse databaser</h3>
             <div id="Databases">
                 <span class="ErrMsg"></span>
             </div>
-            <br/>
-            <h4>Vælg om du vil se tekster, billeder eller video:</h4>
-            <div id="Media">
-                <span class="ErrMsg"></span>
-            </div>
-            <br/>
-            <h4>Skriv dine søgeord her</h4>
-            <div id="SearchTextParent">
-                <input id="SearchText" type="text" placeholder="Skriv dine søgeord her..." /> <span class="ErrMsg"></span>
-            </div>
-            <br/>
-            <br/>
-            <h4>Når du klikker på knappen, bliver du sendt til en googleside med resultaterne fra de valgte databaser</h4>
-            <div id="Search" class="btn btn-primary">Søg i databaserne</div>
             <!-- 
                     <p>(Foretag en dyb søgning med dine valg - Åbner i et nyt vindue)</p> 
  -->
         </div>
     </div>
+    <div class="search_container ">
+        <div id="SearchTextParent" class="col-md-9">
+            <input id="SearchText" type="text" placeholder="Skriv dine søgeord her..." /> <span class="ErrMsg"></span>
+        </div>
+        <div id="Search " class="btn btn-primary col-md-2">gå til Google søgning</div>
+    </div>
     <script src="../library/vendor_scripts.js"></script>
     <script src="../library/custom_scripts.js">
-   
     </script>
-    <script src="soegning.js"></script>
+    <script src="../library/arbor.js"></script>
+    <script language="javascript" type="text/javascript" src="graphics.js"></script>
+    <script language="javascript" type="text/javascript" src="renderer.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
+        getAjaxData("GET", "json/soegning_2.json", false, "json");
         one_line_footer();
+
     });
     </script>
-    
+    <script language="javascript" type="text/javascript" src="soegning.js"></script>
+    <script language="javascript" type="text/javascript" src="mindmap.js"></script>
 </body>
 
 </html>
