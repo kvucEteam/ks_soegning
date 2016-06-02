@@ -6,22 +6,55 @@
                     "label": "Samfundsskabt ulighed",
                     "shape": "dot"
                 },
+
                 "sub_1": {
-                    "label": "Det gode samfund"
+                    "label": "Vesten"
                 },
                 "sub_2": {
                     "label": "Økonomisk ulighed"
                 },
                 "sub_3": {
-                    "label": "Kønspolitik"
+                    "label": "Ligestilling"
                 },
                 "sub_4": {
                     "label": "Minoriteter"
                 },
                 "sub_5": {
+                    "label": "I-lande"
+                },
+                "sub_6": {
                     "label": "U-lande"
+                },
+                "sub_7": {
+                    "label": "Demokrati"
+                },
+                "sub_8": {
+                    "label": "Etik"
+                },
+                "sub_9": {
+                    "label": "Socialisme"
+                },
+                "sub_10": {
+                    "label": "Liberalisme"
+                },
+                "sub_11": {
+                    "label": "Fordelingspolitik"
+                },
+                "sub_12": {
+                    "label": "Civilisation"
+                },
+                "sub_13": {
+                    "label": "Social ulighed"
+                },
+                "sub_14": {
+                    "label": "USA"
+                },
+                "sub_15": {
+                    "label": "Velfærd"
+                },
+                "sub_16": {
+                    "label": "Sociale klasser"
                 }
-
             },
             "edges": {
                 "Key_problem": {
@@ -29,28 +62,18 @@
                     "sub_2": {},
                     "sub_3": {},
                     "sub_4": {},
-                    "sub_5": {}
-                }
-            }
-        }, {
-            "nodes": {
-                "Key_problem": {
-                    "color": "#05a0a8",
-                    "label": "Miljø og Klima",
-                    "shape": "dot"
-                },
-                "sub_1": {
-                    "label": "Økologi"
-                },
-                "sub_2": {
-                    "label": "Bæredygtighed"
-                }
-
-            },
-            "edges": {
-                "Key_problem": {
-                    "sub_1": {},
-                    "sub_2": {}
+                    "sub_5": {},
+                    "sub_6": {},
+                    "sub_7": {},
+                    "sub_8": {},
+                    "sub_9": {},
+                    "sub_10": {},
+                    "sub_11": {},
+                    "sub_12": {},
+                    "sub_13": {},
+                    "sub_14": {},
+                    "sub_15": {},
+                    "sub_16": {}
                 }
             }
         }, {
@@ -60,6 +83,7 @@
                     "label": "Frihed og lighed",
                     "shape": "dot"
                 },
+
                 "sub_1": {
                     "label": "Demokrati"
                 },
@@ -67,19 +91,159 @@
                     "label": "Menneskerettigheder"
                 },
                 "sub_3": {
-                    "label": "USA"
+                    "label": "Ytringsfrihed "
                 },
                 "sub_4": {
-                    "label": "Ytringsfrihed"
+                    "label": "Religionsfrihed"
+                },
+                "sub_5": {
+                    "label": "Det gode samfund"
+                },
+                "sub_6": {
+                    "label": "USA"
+                },
+                "sub_7": {
+                    "label": "Ideologi"
+                },
+                "sub_8": {
+                    "label": "Socialisme"
+                },
+                "sub_9": {
+                    "label": "Liberalisme"
+                },
+                "sub_10": {
+                    "label": "Konservatisme"
+                },
+                "sub_11": {
+                    "label": "Velfærdsstat"
+                },
+                "sub_12": {
+                    "label": "Utopi"
+                },
+                "sub_13": {
+                    "label": "Revolution"
+                },
+                "sub_14": {
+                    "label": "Sekularisering"
+                },
+                "sub_15": {
+                    "label": "Oplysningstid"
+                },
+                "sub_16": {
+                    "label": "Ligestilling"
+                },
+                "sub_17": {
+                    "label": "Minoritet"
+                },
+                "sub_18": {
+                    "label": "Værdier"
                 }
-
             },
             "edges": {
                 "Key_problem": {
                     "sub_1": {},
                     "sub_2": {},
                     "sub_3": {},
-                    "sub_4": {}
+                    "sub_4": {},
+                    "sub_5": {},
+                    "sub_6": {},
+                    "sub_7": {},
+                    "sub_8": {},
+                    "sub_9": {},
+                    "sub_10": {},
+                    "sub_11": {},
+                    "sub_12": {},
+                    "sub_13": {},
+                    "sub_14": {},
+                    "sub_15": {},
+                    "sub_16": {},
+                    "sub_17": {},
+                    "sub_18": {}
+                }
+            }
+        }, {
+            "nodes": {
+                "Key_problem": {
+                    "color": "#05a0a8",
+                    "label": "Globalisering",
+                    "shape": "dot"
+                },
+
+                "sub_1": {
+                    "label": "Grænse"
+                },
+                "sub_2": {
+                    "label": "Nationalisme"
+                },
+                "sub_3": {
+                    "label": "Multikulturel"
+                },
+                "sub_4": {
+                    "label": "Kultur"
+                },
+                "sub_5": {
+                    "label": "EU"
+                },
+                "sub_6": {
+                    "label": "Flygtninge"
+                },
+                "sub_7": {
+                    "label": "Indvandring"
+                },
+                "sub_8": {
+                    "label": "Outsourcing"
+                },
+                "sub_9": {
+                    "label": "Konkurrenceevne"
+                },
+                "sub_10": {
+                    "label": "Etnocentrisme"
+                },
+                "sub_11": {
+                    "label": "Synkretisme "
+                },
+                "sub_12": {
+                    "label": "Kolonisering"
+                },
+                "sub_13": {
+                    "label": "Imperialisme"
+                },
+                "sub_14": {
+                    "label": "Medier"
+                },
+                "sub_15": {
+                    "label": "Penge"
+                },
+                "sub_16": {
+                    "label": "Arbejdskraft"
+                },
+                "sub_17": {
+                    "label": "Velfærdsstat"
+                },
+                "sub_18": {
+                    "label": "Demografi"
+                }
+            },
+            "edges": {
+                "Key_problem": {
+                    "sub_1": {},
+                    "sub_2": {},
+                    "sub_3": {},
+                    "sub_4": {},
+                    "sub_5": {},
+                    "sub_6": {},
+                    "sub_7": {},
+                    "sub_8": {},
+                    "sub_9": {},
+                    "sub_10": {},
+                    "sub_11": {},
+                    "sub_12": {},
+                    "sub_13": {},
+                    "sub_14": {},
+                    "sub_15": {},
+                    "sub_16": {},
+                    "sub_17": {},
+                    "sub_18": {}
                 }
             }
         }
@@ -90,7 +254,6 @@
         "obj": {
             "id": "Dropdown1",
             "class": "Dropdown",
-            "selected": "0",
             "options": [{
                 "value": "danmarkshistorien.dk"
             }, {
@@ -98,21 +261,39 @@
             }, {
                 "value": "videnskab.dk"
             }, {
-                "value": "aargang.dk"
+                "value": "baggrund.com"
             }, {
                 "value": "kvinfo.dk"
             }, {
-                "value": "arbejdermuseet.dk"
+                "value": "religion.dk"
             }, {
-                "value": "gravsted.dk"
+                "value": "jp.dk"
             }, {
                 "value": "emu.dk"
             }, {
-                "value": "arbejdermuseet.dk"
+                "value": "politiken.dk"
             }, {
-                "value": "museernepaakanten.dk"
+                "value": "ekstrabladet.dk"
             }, {
-                "value": "natmus.dk"
+                "value": "jyllands-posten.dk"
+            }, {
+                "value": "information.dk"
+            }, {
+                "value": "weekendavisen.dk"
+            }, {
+                "value": "globalis.dk"
+            }, {
+                "value": "dr.dk"
+            }, {
+                "value": "borsen.dk"
+            }, {
+                "value": "kulturarv.dk"
+            }, {
+                "value": "youtube.dk"
+            }, {
+                "value": "historienet.dk"
+            }, {
+                "value": "danmarksstatistik.dk"
             }]
         }
     }, {
@@ -142,21 +323,57 @@
 
                 "value": "Kritik"
             }, {
-                "value": "debat"
+                "value": "Debat"
             }, {
-                "value": "statistik"
+                "value": "Statistik"
             }, {
-                "value": "debat"
+                "value": "Værdier"
             }, {
-                "value": "holdning"
+                "value": "Holdning"
             }, {
-                "value": "kronik"
+                "value": "Kronik"
             }, {
-                "value": "artikel"
+                "value": "Artikel"
             }, {
-                "value": "kommentar"
+                "value": "Kommentar"
             }, {
-                "value": "debatindlæg"
+                "value": "Debatindlæg"
+            }, {
+                "value": "Fordel"
+            }, {
+                "value": "Ulempe"
+            }, {
+                "value": "Problem"
+            }, {
+                "value": "Diskussion"
+            }, {
+                "value": "Mening"
+            }, {
+                "value": "Problem"
+            }, {
+                "value": "Diskussion"
+            }, {
+                "value": "Synspunkt"
+            }, {
+                "value": "Udfordring"
+            }, {
+                "value": "Konflikt"
+            }, {
+                "value": "Fordom"
+            }, {
+                "value": "Historie"
+            }, {
+                "value": "Fremtiden"
+            }, {
+                "value": "Samfund"
+            }, {
+                "value": "Danmark"
+            }, {
+                "value": "Verden"
+            }, {
+                "value": "Europa"
+            }, {
+                "value": "Mellemøsten"
             }]
         }
     }],

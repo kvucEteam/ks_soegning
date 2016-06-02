@@ -101,13 +101,10 @@ h4 {
 }
 
 .checkbox {
-    display: inline-block;
+     display: inline-block;
     padding: 0px;
-    margin-right: 40px;
-    margin-top: 20px;
-    width: 20%;
     margin-right: 50px;
-    border-bottom:1px solid grey;
+    min-width: 180px;
 }
 
 img {
@@ -116,24 +113,46 @@ img {
 }
 
 .search_container{
-	position: fixed;
-	bottom: 14px;
-	width:  100%;
-	background-color: rgba(248,248,246,.7)
+    position: fixed;
+    bottom: 14px;
+    background-color: rgba(244,248,246,.7);
+    padding: 20px 0px 10px 1px;
+    border-radius: 4px;
+
+    background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(transparent, #, transparent); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(transparent, rgba(244,248,246,1), transparent); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(transparent, rgba(244,248,246,1), transparent); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent, #eee, transparent); /* Standard syntax */
 }
 
 #SearchText{
 	height: 32px;
 	margin-left: 0px;
+
+}
+
+#Databases{
+	margin-bottom: 40px;
 }
 
 #Search{
-	/* color:green; */
-	margin-top: 6px;
-	margin-left: 5px;
+	    margin-top: 0px;
+    margin-left: -20px;
+    height: 32px;
 }
 
 .main_content{
 	margin-bottom: 30px;
+}
+
+.canvas_container{
+	    margin-top: -77px;
+    margin-bottom: -67px;
+
+}
+
+textarea{
+	resize:none;
 }
 

@@ -14,48 +14,55 @@
 
 <body>
     <div class="container-fluid">
-        <div class="col-md-12 col-sm-12 main_content">
+        
             <h1 id="XXX_header">Søg efter bilagsmateriale</h1>
-            <div class=""></div>
-            <h3>Vælg et overordnet emne</h4>
-            <div class="nav_container"></div>
-            <h3>Vælg underemner </h3>
-            <div class="canvas_container">
+            <div class="inst_wrapper col-xs-8">
+                <div class="instr_container"></div>
+                <div id="explanationWrapper"></div>
             </div>
-            <h3 id="FilterHeading">Vælg en eller flere filtre herunder</h3>
-            <div id="Filters">
-                <span class="ErrMsg"></span>
-            </div>
-            <h3 id="DataBaseHeading">Søg på disse databaser</h3>
-            <div id="Databases">
-                <span class="ErrMsg"></span>
-            </div>
-            <!-- 
+            <div class="col-xs-4"></div>
+        <div class="col-md-12 col-sm-12 main_content">
+                <h3>Vælg et overordnet emne</h3>
+                <div class="nav_container"></div>
+                <h3>Vælg underemner </h3>
+                <div class="canvas_container">
+                </div>
+                <h3 id="FilterHeading">Vælg en eller flere filtre herunder</h3>
+                <div id="Filters">
+                    <span class="ErrMsg"></span>
+                </div>
+                <h3 id="DataBaseHeading">Søg på disse databaser</h3>
+                <div id="Databases">
+                    <span class="ErrMsg"></span>
+                </div>
+                <!-- 
                     <p>(Foretag en dyb søgning med dine valg - Åbner i et nyt vindue)</p> 
  -->
+            </div>
+            <div class="search_container ">
+                <div id="SearchTextParent" class="col-xs-9">
+                    <textarea id="SearchText" type="text" placeholder="Skriv dine søgeord her..."></textarea> <span class="ErrMsg"></span>
+                </div>
+                <div class="col-xs-2 col-md-3">
+                    <div id="Search" class="btn btn-primary">Google søgning</div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="search_container ">
-        <div id="SearchTextParent" class="col-md-9">
-            <input id="SearchText" type="text" placeholder="Skriv dine søgeord her..." /> <span class="ErrMsg"></span>
-        </div>
-        <div id="Search " class="btn btn-primary col-md-2">gå til Google søgning</div>
-    </div>
-    <script src="../library/vendor_scripts.js"></script>
-    <script src="../library/custom_scripts.js">
-    </script>
-    <script src="../library/arbor.js"></script>
-    <script language="javascript" type="text/javascript" src="graphics.js"></script>
-    <script language="javascript" type="text/javascript" src="renderer.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        getAjaxData("GET", "json/soegning_2.json", false, "json");
-        one_line_footer();
+        <script src="../library/vendor_scripts.js"></script>
+        <script src="../library/custom_scripts.js">
+        </script>
+        <script src="../library/arbor.js"></script>
+        <script language="javascript" type="text/javascript" src="graphics.js"></script>
+        <script language="javascript" type="text/javascript" src="renderer.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            getAjaxData("GET", "json/soegning_2.json", false, "json");
+            one_line_footer();
 
-    });
-    </script>
-    <script language="javascript" type="text/javascript" src="soegning.js"></script>
-    <script language="javascript" type="text/javascript" src="mindmap.js"></script>
+        });
+        </script>
+        <script language="javascript" type="text/javascript" src="soegning.js"></script>
+        <script language="javascript" type="text/javascript" src="mindmap.js"></script>
 </body>
 
 </html>

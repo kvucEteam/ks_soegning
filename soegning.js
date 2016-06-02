@@ -1,4 +1,3 @@
-
 var CurrentQuestionId = 0;
 var correct_total = 0;
 var error_total = 0;
@@ -33,10 +32,10 @@ function returnCheckboxMarkup(DropdownObj) {
     console.log("returnDropdownMarkup - Selected: " + Selected);
     var DOO = DropdownObj.options;
     for (var n in DOO) {
-        HTML += '<div class="checkbox' + ((DOO[n].hasOwnProperty("id")) ? ' id="' + DOO[n].id + '"' : "") + ((DOO[n].hasOwnProperty("class")) ? ' class="' + DOO[n].class + '"' : "") + ((n == Selected) ? ' disabled selected' : "") + '"><label><input type="checkbox" checked value="' + ((n == Selected) ? '' : DOO[n].value) + ' ">' + DOO[n].value + '</label></div>';
+        HTML += '<div class="checkbox' + ((DOO[n].hasOwnProperty("id")) ? ' id="' + DOO[n].id + '"' : "") + ((DOO[n].hasOwnProperty("class")) ? ' class="' + DOO[n].class + '"' : "") + '"><label><input class = "db_input" type="checkbox" checked value="' + DOO[n].value + ' ">' + DOO[n].value + '</label></div>';
         // HTML += '<option'+((DOO[n].hasOwnProperty("id"))?' id="'+DOO[n].id+'"':"")+((DOO[n].hasOwnProperty("class"))?' class="'+DOO[n].class+'"':"")+' value="'+DOO[n].value+'">'+DOO[n].value+'</option>';
     };
-    HTML += "</form>";
+    HTML += "</form><div class='btn btn-info btn_toggleDb'>Fjern alle</div>";
     return HTML;
 }
 
@@ -50,7 +49,7 @@ function returnButtonSecection(DropdownObj) {
     var DOO = DropdownObj.options;
     // for (n in DOO){
     for (var n = 1; n < DOO.length; n++) { // NOTE: n = 1 and up, since the "instruction" in the dropdown should not appear as a button:
-        HTML += '<span' + ((DOO[n].hasOwnProperty("id")) ? ' id="' + DOO[n].id + '"' : "") + ' class="btn btn-default' + ((DOO[n].hasOwnProperty("class")) ? ' ' + DOO[n].class : "") + '">' + DOO[n].value + '</span>';
+        HTML += '<span' + ((DOO[n].hasOwnProperty("id")) ? ' id="' + DOO[n].id + '"' : "") + ' class="btn btn-sm btn-default' + ((DOO[n].hasOwnProperty("class")) ? ' ' + DOO[n].class : "") + '">' + DOO[n].value + '</span>';
     };
     // HTML += "</div>";
     return HTML;
@@ -101,24 +100,47 @@ $(document).on('click', "#Media > .btn", function(event) {
 });
 
 $(document).on('click', "#Filters > .btn", function(event) {
-    
-$(this).toggleClass("btnPressed");
+    var that = $(this);
+    if (that.hasClass("btnPressed")) {
+        console.log("hasClass");
+        var tekst = that.text();
+        console.log("hej:" + tekst);
+
+
+        var start = soegestreng.indexOf(tekst);
+        var n_length = tekst.length;
+
+
+        var slut = start + n_length;
+        var ny_soegestreng = soegestreng.substring(0, start - 1) + soegestreng.substring(slut, soegestreng.length);
+        soegestreng = ny_soegestreng;
+    } else {
+        console.log("hasnotClass");
+        soegestreng = soegestreng + " " + that.text();
+    }
+
+    $(this).toggleClass("btnPressed");
+
+    opdater_sogestreng();
+
 });
 
 
 //// SØGE START --> GOOOGLE
 
 $(document).on('click', "#Search", function(event) {
-    
+
 
     var SearchText = $("#SearchText").val();
     console.log("Search - SearchText: " + SearchText);
 
-    
+
     var Databases = "";
     $("input:checked").each(function(index, element) {
+
         console.log();
-            Databases += ((index > 0) ? "+OR+" : "") + " site:" + $(this).attr("value");
+        Databases += ((index > 0) ? "+OR+" : "") + " site:" + $(this).attr("value");
+    console.log("Databases: " + Databases);
     });
     console.log("Search - Databases: " + Databases);
 
@@ -127,16 +149,16 @@ $(document).on('click', "#Search", function(event) {
     var URL = 'http://www.google.dk/?#q=';
 
 
-    
+
 
     if (SearchText.length > 0) {
         URL += "+" + SearchText.replace(/\ +/g, "+");
-        $("#SearchTextParent").removeClass("ErrorColor");  // NEW
+        $("#SearchTextParent").removeClass("ErrorColor"); // NEW
         // $("#SearchText").attr("placeholder", SearchPlaceholderMemory);  // Inset old placeholder text again.
         // $("#SearchText").next().fadeOut("slow");  // OLD
     } else {
         // $("#SearchText").next().text("Skriv nogle søgeord her!").fadeIn("slow");  // OLD
-        $("#SearchTextParent").addClass("ErrorColor");   // NEW
+        $("#SearchTextParent").addClass("ErrorColor"); // NEW
         // $("#SearchText").attr("placeholder","Skriv nogle søgeord her!").fadeIn("slow");  // NEW
         return 0;
     }
@@ -153,7 +175,7 @@ $(document).on('click', "#Search", function(event) {
         $("#DataBaseHeading").addClass("ErrorColorHeading");
         return 0;
     }
-  
+
 
     console.log("Search - URL: " + URL);
 
@@ -163,9 +185,9 @@ $(document).on('click', "#Search", function(event) {
 
 
 $(document).ready(function() {
-  
-    modal();
 
+$(".instr_container").html(instruction("Når du skal til eksamen, skal du vise, at du selv kan finde tekster og andet materiale, som bidrager til besvarelsen af din problemformulering. Her får du hjælp til at målrette din søgning."));
+ $('#explanationWrapper').html(explanation("Udvælg først et af de overordnede emner til din søgning. Vælg herefter et eller flere relevante underemner til din søgning fra mindmappet ved at klikke på dem. Du kan også målrette eller vinkle din søgning yderligere i forhold til f.eks. tekstgenre eller holdning ved at vælge blandt “filtrene” på listen. Til sidst skal du beslutte, hvor du vil søge ud fra listen over medier og databaser nederst på siden. Du kan også selv tilføje ord og begreber i søgefeltet."));
     var UlrVarObj = {
         "file": ""
     }; // Define a default file-refrence (empty) ---> "QuizData.json"
@@ -173,7 +195,6 @@ $(document).ready(function() {
     console.log("UlrVarObj: " + JSON.stringify(UlrVarObj));
 
     //ReturnAjaxData("GET", "json/soegning" + UlrVarObj.file + ".json", false, "json");
-
 
 
     $("#DataInput").html(returnSearchInterface(jsonData)); // Insert carousel HTML
@@ -184,6 +205,18 @@ $(document).ready(function() {
     $("#subHeader").html(jsonData.userInterface.subHeader); // Shows the initial subheading.
 
     $("#Databases").prepend(returnCheckboxMarkup(jsonData.DropDowns[0].obj));
+
+    $(".btn_toggleDb").click(function(){
+        $(this).toggleClass("selected");
+        if ($(this).hasClass("selected")){
+            $(".db_input").prop( "checked", false );
+            $(this).text("Tilføj alle");
+        }else{
+            $(".db_input").prop( "checked", true );
+            $(this).text("Fjern alle");
+        }
+    });
+
     $("#Media").prepend(returnButtonSecection(jsonData.DropDowns[1].obj));
     $("#Filters").prepend(returnButtonSecection(jsonData.DropDowns[2].obj));
 

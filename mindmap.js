@@ -4,22 +4,26 @@ var particleSystem;
 
 var soegestreng = "";
 
-
-
 $(document).ready(function() {
-
     generate_tabs();
     make_mindmap(active_tab);
     $(window).resize(resize_window);
-
-
-
-
+    $(".search_container").width($(".container-fluid").width());
 });
 
-function resize_window(){
+function resize_window() {
+
+    var cachedWidth = $(window).width();
+    $(window).resize(function() {
+        var newWidth = $(window).width();
+        if (newWidth !== cachedWidth) {
+            make_mindmap(active_tab);
+            $(".search_container").width($(".container-fluid").width());
+            cachedWidth = newWidth;
+        }
+    });
     console.log("resize");
-    make_mindmap(active_tab);
+    console.log("SC_WIDTH: " + $(".search_container").width()); // +","+ $(".container-fluid").width);
 }
 
 function generate_tabs() {
@@ -60,20 +64,21 @@ function make_mindmap(active_tab) {
 
     var c_width = $(".container-fluid").width();
 
+    $(".canvas_container").html("");
     $(".canvas_container").html(" <canvas id='viewport' width='" + c_width + "' height='350'></canvas>");
 
     var w_height = $(window).height(); // New height
     var w_width = $(window).width();
-
+    
     var sys = arbor.ParticleSystem();
 
     particleSystem = sys;
 
     sys.parameters({
-        repulsion: 5,
-        stiffness: 100,
+        repulsion: 1,
+        stiffness: 10,
         friction: .1,
-        gravity: true,
+        gravity: false,
         dt: 0.1
     });
 
@@ -94,22 +99,35 @@ function make_mindmap(active_tab) {
         if (selected.node !== null) {
             selected = (nearest.distance < 50) ? nearest : null;
 
+
+
+
             console.log(selected);
             console.log(selected.node._id + selected.node.data.label);
 
             if (soegestreng.indexOf(selected.node.data.label) > -1) {
+                if (selected.node.data.shape != "dot") {
+                    selected.node.data.color = "white";
+                    selected.node.data.shape = "";
+                }
                 console.log("Der er en");
-        
+
                 var start = soegestreng.indexOf(selected.node.data.label);
                 var n_length = selected.node.data.label.length;
                 var slut = start + n_length;
-                var ny_soegestreng = soegestreng.substring(0,start) + soegestreng.substring(slut,soegestreng.length);
+                var ny_soegestreng = soegestreng.substring(0, start - 1) + soegestreng.substring(slut, soegestreng.length);
 
-                        soegestreng = ny_soegestreng;
+                soegestreng = ny_soegestreng;
 
             } else {
                 soegestreng = soegestreng + " " + selected.node.data.label;
+
+                if (selected.node.data.shape != "dot") {
+                    selected.node.data.color = "#666";
+                    selected.node.data.shape = "selected";
+                }
             }
+
 
 
 
@@ -146,5 +164,17 @@ function make_mindmap(active_tab) {
 }
 
 function opdater_sogestreng() {
+
+    $("#SearchTextParent").fadeOut(0);
+    $("#SearchTextParent").fadeIn(500);
     $("#SearchText").val(soegestreng);
 }
+
+function h(e) {
+    $(e).css({ 'height': 'auto', 'overflow-y': 'hidden' }).height(e.scrollHeight);
+}
+$('textarea').each(function() {
+    h(this);
+}).on('input', function() {
+    h(this);
+});

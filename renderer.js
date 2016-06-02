@@ -3,6 +3,30 @@
     Renderer = function(canvas) {
         var canvas = $(canvas).get(0)
         var ctx = canvas.getContext("2d");
+
+
+
+
+        //var hidefCanvas = $('#hidef')[0];
+        //var hidefContext = hidefCanvas.getContext('2d');
+
+        /*Funktion der skaber klar tekst... vireker ikke med resize.. 
+
+                if (window.devicePixelRatio) {
+
+                    console.log("WD: " + window.devicePixelRatio);
+                    var hidefCanvasWidth = $(canvas).attr('width');
+                    var hidefCanvasHeight = $(canvas).attr('height');
+                    var hidefCanvasCssWidth = hidefCanvasWidth;
+                    var hidefCanvasCssHeight = hidefCanvasHeight;
+
+                    $(canvas).attr('width', hidefCanvasWidth); // * window.devicePixelRatio);
+                    $(canvas).attr('height', hidefCanvasHeight); // * window.devicePixelRatio);
+                    $(canvas).css('width', hidefCanvasCssWidth);
+                    $(canvas).css('height', hidefCanvasCssHeight);
+                    ctx.scale(window.devicePixelRatio /2, window.devicePixelRatio/2);
+                }*/
+
         var gfx = arbor.Graphics(canvas)
         var particleSystem = null
 
@@ -57,7 +81,9 @@
                         ctx.textAlign = "center"
                         if (node.data.shape == 'dot') {
                             ctx.fillStyle = "white"
-                        }else{
+                        } else if (node.data.shape == 'selected') {
+                            ctx.fillStyle = "white"
+                        } else {
                             ctx.fillStyle = "#555"
                         }
                         if (node.data.color == 'none') ctx.fillStyle = 'white'
