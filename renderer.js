@@ -10,22 +10,22 @@
         //var hidefCanvas = $('#hidef')[0];
         //var hidefContext = hidefCanvas.getContext('2d');
 
-        /*Funktion der skaber klar tekst... vireker ikke med resize.. 
+        /*Funktion der skaber klar tekst... vireker ikke med resize.. */
 
-                if (window.devicePixelRatio) {
+        if (window.devicePixelRatio) {
 
-                    console.log("WD: " + window.devicePixelRatio);
-                    var hidefCanvasWidth = $(canvas).attr('width');
-                    var hidefCanvasHeight = $(canvas).attr('height');
-                    var hidefCanvasCssWidth = hidefCanvasWidth;
-                    var hidefCanvasCssHeight = hidefCanvasHeight;
+            console.log("WD: " + window.devicePixelRatio);
+            var hidefCanvasWidth = $(canvas).attr('width');
+            var hidefCanvasHeight = $(canvas).attr('height');
+            var hidefCanvasCssWidth = hidefCanvasWidth;
+            var hidefCanvasCssHeight = hidefCanvasHeight;
 
-                    $(canvas).attr('width', hidefCanvasWidth); // * window.devicePixelRatio);
-                    $(canvas).attr('height', hidefCanvasHeight); // * window.devicePixelRatio);
-                    $(canvas).css('width', hidefCanvasCssWidth);
-                    $(canvas).css('height', hidefCanvasCssHeight);
-                    ctx.scale(window.devicePixelRatio /2, window.devicePixelRatio/2);
-                }*/
+            $(canvas).attr('width', hidefCanvasWidth); //* window.devicePixelRatio);
+            $(canvas).attr('height', hidefCanvasHeight); //* window.devicePixelRatio);
+            $(canvas).css('width', hidefCanvasCssWidth);
+            $(canvas).css('height', hidefCanvasCssHeight);
+            //ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+        }
 
         var gfx = arbor.Graphics(canvas)
         var particleSystem = null
@@ -229,8 +229,9 @@
                 intersect_line_line(p1, p2, bl, tl) ||
                 false
         }
-
+        
         return that
+
     }
 
 })()

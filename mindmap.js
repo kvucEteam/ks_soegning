@@ -4,6 +4,8 @@ var particleSystem;
 
 var soegestreng = "";
 
+var resizing = false;
+
 $(document).ready(function() {
     generate_tabs();
     make_mindmap(active_tab);
@@ -13,17 +15,31 @@ $(document).ready(function() {
 
 function resize_window() {
 
+    resizing = true;
     var cachedWidth = $(window).width();
-    $(window).resize(function() {
-        var newWidth = $(window).width();
-        if (newWidth !== cachedWidth) {
+
+    //clearTimeout(timeout);
+    var timeout = setTimeout(function() {
+
+
+        if (resizing == true) {
+            console.log("skyder " + resizing);
             make_mindmap(active_tab);
-            $(".search_container").width($(".container-fluid").width());
-            cachedWidth = newWidth;
+            resizing = false;
+            
+            $(window).resize(function() {
+                
+                var newWidth = $(window).width();
+                if (newWidth !== cachedWidth) {
+                    
+                    $(".search_container").width($(".container-fluid").width());
+                    cachedWidth = newWidth;
+                }
+            });
+            console.log("NU resizer vi")
         }
-    });
-    console.log("resize");
-    console.log("SC_WIDTH: " + $(".search_container").width()); // +","+ $(".container-fluid").width);
+
+    }, 500);
 }
 
 function generate_tabs() {
@@ -59,6 +75,8 @@ function generate_tabs() {
 
 function make_mindmap(active_tab) {
 
+    console.log("make_mindmap");
+
     $(".SearchText").val("");
     soegestreng = "";
 
@@ -69,7 +87,7 @@ function make_mindmap(active_tab) {
 
     var w_height = $(window).height(); // New height
     var w_width = $(window).width();
-    
+
     var sys = arbor.ParticleSystem();
 
     particleSystem = sys;
