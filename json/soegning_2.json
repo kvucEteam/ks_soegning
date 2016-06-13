@@ -1,254 +1,685 @@
 {
     "Key_probs": [{
-            "nodes": {
-                "Key_problem": {
-                    "color": "#05a0a8",
-                    "label": "Samfundsskabt ulighed",
-                    "shape": "dot"
-                },
-
-                "sub_1": {
-                    "label": "Vesten"
-                },
-                "sub_2": {
-                    "label": "Økonomisk ulighed"
-                },
-                "sub_3": {
-                    "label": "Ligestilling"
-                },
-                "sub_4": {
-                    "label": "Minoriteter"
-                },
-                "sub_5": {
-                    "label": "I-lande"
-                },
-                "sub_6": {
-                    "label": "U-lande"
-                },
-                "sub_7": {
-                    "label": "Demokrati"
-                },
-                "sub_8": {
-                    "label": "Etik"
-                },
-                "sub_9": {
-                    "label": "Socialisme"
-                },
-                "sub_10": {
-                    "label": "Liberalisme"
-                },
-                "sub_11": {
-                    "label": "Fordelingspolitik"
-                },
-                "sub_12": {
-                    "label": "Civilisation"
-                },
-                "sub_13": {
-                    "label": "Social ulighed"
-                },
-                "sub_14": {
-                    "label": "USA"
-                },
-                "sub_15": {
-                    "label": "Velfærd"
-                },
-                "sub_16": {
-                    "label": "Sociale klasser"
-                }
+        "nodes": {
+            "Key_problem": {
+                "color": "#05a0a8",
+                "label": "Samfundsskabt ulighed",
+                "shape": "dot"
             },
-            "edges": {
-                "Key_problem": {
-                    "sub_1": {},
-                    "sub_2": {},
-                    "sub_3": {},
-                    "sub_4": {},
-                    "sub_5": {},
-                    "sub_6": {},
-                    "sub_7": {},
-                    "sub_8": {},
-                    "sub_9": {},
-                    "sub_10": {},
-                    "sub_11": {},
-                    "sub_12": {},
-                    "sub_13": {},
-                    "sub_14": {},
-                    "sub_15": {},
-                    "sub_16": {}
-                }
+
+            "sub_1": {
+                "label": "Vesten"
+            },
+            "sub_2": {
+                "label": "Økonomisk ulighed"
+            },
+            "sub_3": {
+                "label": "Ligestilling"
+            },
+            "sub_4": {
+                "label": "Minoriteter"
+            },
+            "sub_5": {
+                "label": "I-lande"
+            },
+            "sub_6": {
+                "label": "U-lande"
+            },
+            "sub_7": {
+                "label": "Demokrati"
+            },
+            "sub_8": {
+                "label": "Etik"
+            },
+            "sub_9": {
+                "label": "Socialisme"
+            },
+            "sub_10": {
+                "label": "Liberalisme"
+            },
+            "sub_11": {
+                "label": "Fordelingspolitik"
+            },
+            "sub_12": {
+                "label": "Civilisation"
+            },
+            "sub_13": {
+                "label": "Social ulighed"
+            },
+            "sub_14": {
+                "label": "USA"
+            },
+            "sub_15": {
+                "label": "Velfærd"
+            },
+            "sub_16": {
+                "label": "Sociale klasser"
             }
-        }, {
-            "nodes": {
-                "Key_problem": {
-                    "color": "#05a0a8",
-                    "label": "Frihed og lighed",
-                    "shape": "dot"
-                },
-
-                "sub_1": {
-                    "label": "Demokrati"
-                },
-                "sub_2": {
-                    "label": "Menneskerettigheder"
-                },
-                "sub_3": {
-                    "label": "Ytringsfrihed "
-                },
-                "sub_4": {
-                    "label": "Religionsfrihed"
-                },
-                "sub_5": {
-                    "label": "Det gode samfund"
-                },
-                "sub_6": {
-                    "label": "USA"
-                },
-                "sub_7": {
-                    "label": "Ideologi"
-                },
-                "sub_8": {
-                    "label": "Socialisme"
-                },
-                "sub_9": {
-                    "label": "Liberalisme"
-                },
-                "sub_10": {
-                    "label": "Konservatisme"
-                },
-                "sub_11": {
-                    "label": "Velfærdsstat"
-                },
-                "sub_12": {
-                    "label": "Utopi"
-                },
-                "sub_13": {
-                    "label": "Revolution"
-                },
-                "sub_14": {
-                    "label": "Sekularisering"
-                },
-                "sub_15": {
-                    "label": "Oplysningstid"
-                },
-                "sub_16": {
-                    "label": "Ligestilling"
-                },
-                "sub_17": {
-                    "label": "Minoritet"
-                },
-                "sub_18": {
-                    "label": "Værdier"
-                }
-            },
-            "edges": {
-                "Key_problem": {
-                    "sub_1": {},
-                    "sub_2": {},
-                    "sub_3": {},
-                    "sub_4": {},
-                    "sub_5": {},
-                    "sub_6": {},
-                    "sub_7": {},
-                    "sub_8": {},
-                    "sub_9": {},
-                    "sub_10": {},
-                    "sub_11": {},
-                    "sub_12": {},
-                    "sub_13": {},
-                    "sub_14": {},
-                    "sub_15": {},
-                    "sub_16": {},
-                    "sub_17": {},
-                    "sub_18": {}
-                }
-            }
-        }, {
-            "nodes": {
-                "Key_problem": {
-                    "color": "#05a0a8",
-                    "label": "Globalisering",
-                    "shape": "dot"
-                },
-
-                "sub_1": {
-                    "label": "Grænse"
-                },
-                "sub_2": {
-                    "label": "Nationalisme"
-                },
-                "sub_3": {
-                    "label": "Multikulturel"
-                },
-                "sub_4": {
-                    "label": "Kultur"
-                },
-                "sub_5": {
-                    "label": "EU"
-                },
-                "sub_6": {
-                    "label": "Flygtninge"
-                },
-                "sub_7": {
-                    "label": "Indvandring"
-                },
-                "sub_8": {
-                    "label": "Outsourcing"
-                },
-                "sub_9": {
-                    "label": "Konkurrenceevne"
-                },
-                "sub_10": {
-                    "label": "Etnocentrisme"
-                },
-                "sub_11": {
-                    "label": "Synkretisme "
-                },
-                "sub_12": {
-                    "label": "Kolonisering"
-                },
-                "sub_13": {
-                    "label": "Imperialisme"
-                },
-                "sub_14": {
-                    "label": "Medier"
-                },
-                "sub_15": {
-                    "label": "Penge"
-                },
-                "sub_16": {
-                    "label": "Arbejdskraft"
-                },
-                "sub_17": {
-                    "label": "Velfærdsstat"
-                },
-                "sub_18": {
-                    "label": "Demografi"
-                }
-            },
-            "edges": {
-                "Key_problem": {
-                    "sub_1": {},
-                    "sub_2": {},
-                    "sub_3": {},
-                    "sub_4": {},
-                    "sub_5": {},
-                    "sub_6": {},
-                    "sub_7": {},
-                    "sub_8": {},
-                    "sub_9": {},
-                    "sub_10": {},
-                    "sub_11": {},
-                    "sub_12": {},
-                    "sub_13": {},
-                    "sub_14": {},
-                    "sub_15": {},
-                    "sub_16": {},
-                    "sub_17": {},
-                    "sub_18": {}
-                }
+        },
+        "edges": {
+            "Key_problem": {
+                "sub_1": {},
+                "sub_2": {},
+                "sub_3": {},
+                "sub_4": {},
+                "sub_5": {},
+                "sub_6": {},
+                "sub_7": {},
+                "sub_8": {},
+                "sub_9": {},
+                "sub_10": {},
+                "sub_11": {},
+                "sub_12": {},
+                "sub_13": {},
+                "sub_14": {},
+                "sub_15": {},
+                "sub_16": {}
             }
         }
+    }, {
+        "nodes": {
+            "Key_problem": {
+                "color": "#05a0a8",
+                "label": "Frihed og lighed",
+                "shape": "dot"
+            },
 
-    ],
+            "sub_1": {
+                "label": "Demokrati"
+            },
+            "sub_2": {
+                "label": "Menneskerettigheder"
+            },
+            "sub_3": {
+                "label": "Ytringsfrihed "
+            },
+            "sub_4": {
+                "label": "Religionsfrihed"
+            },
+            "sub_5": {
+                "label": "Det gode samfund"
+            },
+            "sub_6": {
+                "label": "USA"
+            },
+            "sub_7": {
+                "label": "Ideologi"
+            },
+            "sub_8": {
+                "label": "Socialisme"
+            },
+            "sub_9": {
+                "label": "Liberalisme"
+            },
+            "sub_10": {
+                "label": "Konservatisme"
+            },
+            "sub_11": {
+                "label": "Velfærdsstat"
+            },
+            "sub_12": {
+                "label": "Utopi"
+            },
+            "sub_13": {
+                "label": "Revolution"
+            },
+            "sub_14": {
+                "label": "Sekularisering"
+            },
+            "sub_15": {
+                "label": "Oplysningstid"
+            },
+            "sub_16": {
+                "label": "Ligestilling"
+            },
+            "sub_17": {
+                "label": "Minoritet"
+            },
+            "sub_18": {
+                "label": "Værdier"
+            }
+        },
+        "edges": {
+            "Key_problem": {
+                "sub_1": {},
+                "sub_2": {},
+                "sub_3": {},
+                "sub_4": {},
+                "sub_5": {},
+                "sub_6": {},
+                "sub_7": {},
+                "sub_8": {},
+                "sub_9": {},
+                "sub_10": {},
+                "sub_11": {},
+                "sub_12": {},
+                "sub_13": {},
+                "sub_14": {},
+                "sub_15": {},
+                "sub_16": {},
+                "sub_17": {},
+                "sub_18": {}
+            }
+        }
+    }, {
+        "nodes": {
+            "Key_problem": {
+                "color": "#05a0a8",
+                "label": "Globalisering",
+                "shape": "dot"
+            },
+
+            "sub_1": {
+                "label": "Grænse"
+            },
+            "sub_2": {
+                "label": "Nationalisme"
+            },
+            "sub_3": {
+                "label": "Multikulturel"
+            },
+            "sub_4": {
+                "label": "Kultur"
+            },
+            "sub_5": {
+                "label": "EU"
+            },
+            "sub_6": {
+                "label": "Flygtninge"
+            },
+            "sub_7": {
+                "label": "Indvandring"
+            },
+            "sub_8": {
+                "label": "Outsourcing"
+            },
+            "sub_9": {
+                "label": "Konkurrenceevne"
+            },
+            "sub_10": {
+                "label": "Etnocentrisme"
+            },
+            "sub_11": {
+                "label": "Synkretisme "
+            },
+            "sub_12": {
+                "label": "Kolonisering"
+            },
+            "sub_13": {
+                "label": "Imperialisme"
+            },
+            "sub_14": {
+                "label": "Medier"
+            },
+            "sub_15": {
+                "label": "Penge"
+            },
+            "sub_16": {
+                "label": "Arbejdskraft"
+            },
+            "sub_17": {
+                "label": "Velfærdsstat"
+            },
+            "sub_18": {
+                "label": "Demografi"
+            }
+        },
+        "edges": {
+            "Key_problem": {
+                "sub_1": {},
+                "sub_2": {},
+                "sub_3": {},
+                "sub_4": {},
+                "sub_5": {},
+                "sub_6": {},
+                "sub_7": {},
+                "sub_8": {},
+                "sub_9": {},
+                "sub_10": {},
+                "sub_11": {},
+                "sub_12": {},
+                "sub_13": {},
+                "sub_14": {},
+                "sub_15": {},
+                "sub_16": {},
+                "sub_17": {},
+                "sub_18": {}
+            }
+        }
+    }, {
+        "nodes": {
+            "Key_problem": {
+                "color": "#05a0a8",
+                "label": "Identitetsdannelse",
+                "shape": "dot"
+            },
+
+            "sub_1": {
+                "label": "Individualitet"
+            },
+            "sub_2": {
+                "label": "Socialemedier"
+            },
+            "sub_3": {
+                "label": "Sundhed"
+            },
+            "sub_4": {
+                "label": "Seksualitet"
+            },
+            "sub_5": {
+                "label": "Det gode liv"
+            },
+            "sub_6": {
+                "label": "Informationssamfund"
+            },
+            "sub_7": {
+                "label": "Senmoderne samfund"
+            },
+            "sub_8": {
+                "label": "Socialisering"
+            },
+            "sub_9": {
+                "label": "Aftraditionalisering"
+            },
+            "sub_10": {
+                "label": "Social kontrol"
+            },
+            "sub_11": {
+                "label": "Facebook"
+            },
+            "sub_12": {
+                "label": "Afsekularisering"
+            },
+            "sub_13": {
+                "label": "Sociale klasser"
+            },
+            "sub_14": {
+                "label": "Social arv"
+            },
+            "sub_15": {
+                "label": "Ungdom"
+            },
+            "sub_16": {
+                "label": "Forbrug"
+            },
+            "sub_17": {
+                "label": "Normer"
+            },
+            "sub_18": {
+                "label": "Religion"
+            }
+        },
+        "edges": {
+            "Key_problem": {
+                "sub_1": {},
+                "sub_2": {},
+                "sub_3": {},
+                "sub_4": {},
+                "sub_5": {},
+                "sub_6": {},
+                "sub_7": {},
+                "sub_8": {},
+                "sub_9": {},
+                "sub_10": {},
+                "sub_11": {},
+                "sub_12": {},
+                "sub_13": {},
+                "sub_14": {},
+                "sub_15": {},
+                "sub_16": {},
+                "sub_17": {},
+                "sub_18": {}
+            }
+        }
+    }, {
+        "nodes": {
+            "Key_problem": {
+                "color": "#05a0a8",
+                "label": "Fjendebilleder",
+                "shape": "dot"
+            },
+
+            "sub_1": {
+                "label": "Islam"
+            },
+            "sub_2": {
+                "label": "Flygtning"
+            },
+            "sub_3": {
+                "label": "Integration"
+            },
+            "sub_4": {
+                "label": "Multikulturel"
+            },
+            "sub_5": {
+                "label": "Terror"
+            },
+            "sub_6": {
+                "label": "Radikalisering"
+            },
+            "sub_7": {
+                "label": "Fundamentalisme"
+            },
+            "sub_8": {
+                "label": "Sekularisme"
+            },
+            "sub_9": {
+                "label": "Fjendskab"
+            },
+            "sub_10": {
+                "label": "Minoritet"
+            },
+            "sub_11": {
+                "label": "Dualisme"
+            },
+            "sub_12": {
+                "label": "Nationalisme"
+            },
+            "sub_13": {
+                "label": "Propaganda"
+            },
+            "sub_14": {
+                "label": "Kultur"
+            },
+            "sub_15": {
+                "label": "Globalisering"
+            },
+            "sub_16": {
+                "label": "Religion"
+            },
+            "sub_17": {
+                "label": "Imperialisme"
+            },
+            "sub_18": {
+                "label": "Populisme"
+            }
+        },
+        "edges": {
+            "Key_problem": {
+                "sub_1": {},
+                "sub_2": {},
+                "sub_3": {},
+                "sub_4": {},
+                "sub_5": {},
+                "sub_6": {},
+                "sub_7": {},
+                "sub_8": {},
+                "sub_9": {},
+                "sub_10": {},
+                "sub_11": {},
+                "sub_12": {},
+                "sub_13": {},
+                "sub_14": {},
+                "sub_15": {},
+                "sub_16": {},
+                "sub_17": {},
+                "sub_18": {}
+            }
+        }
+    }, {
+        "nodes": {
+            "Key_problem": {
+                "color": "#05a0a8",
+                "label": "Magt",
+                "shape": "dot"
+            },
+
+            "sub_1": {
+                "label": "Magtmisbrug"
+            },
+            "sub_2": {
+                "label": "Styreformer"
+            },
+            "sub_3": {
+                "label": "Demokrati"
+            },
+            "sub_4": {
+                "label": "Totalitær"
+            },
+            "sub_5": {
+                "label": "Kina"
+            },
+            "sub_6": {
+                "label": "Tyskland"
+            },
+            "sub_7": {
+                "label": "USA"
+            },
+            "sub_8": {
+                "label": "Ret og pligt"
+            },
+            "sub_9": {
+                "label": "Magtens tredeling"
+            },
+            "sub_10": {
+                "label": "Økonomisk magt"
+            },
+            "sub_11": {
+                "label": "Medier"
+            },
+            "sub_12": {
+                "label": "Populisme"
+            },
+            "sub_13": {
+                "label": "Enevælde"
+            },
+            "sub_14": {
+                "label": "Fundamentalisme"
+            },
+            "sub_15": {
+                "label": "Teokrati"
+            },
+            "sub_16": {
+                "label": "Politik"
+            },
+            "sub_17": {
+                "label": "Ideologier"
+            },
+            "sub_18": {
+                "label": "Revolution"
+            }
+        },
+        "edges": {
+            "Key_problem": {
+                "sub_1": {},
+                "sub_2": {},
+                "sub_3": {},
+                "sub_4": {},
+                "sub_5": {},
+                "sub_6": {},
+                "sub_7": {},
+                "sub_8": {},
+                "sub_9": {},
+                "sub_10": {},
+                "sub_11": {},
+                "sub_12": {},
+                "sub_13": {},
+                "sub_14": {},
+                "sub_15": {},
+                "sub_16": {},
+                "sub_17": {},
+                "sub_18": {}
+            }
+        }
+    }, {
+        "nodes": {
+            "Key_problem": {
+                "color": "#05a0a8",
+                "label": "Krig og fred",
+                "shape": "dot"
+            },
+
+            "sub_1": {
+                "label": "Verdensorden"
+            },
+            "sub_2": {
+                "label": "Konflikt"
+            },
+            "sub_3": {
+                "label": "Konfliktløsning"
+            },
+            "sub_4": {
+                "label": "Brændpunkter"
+            },
+            "sub_5": {
+                "label": "Flygtninge"
+            },
+            "sub_6": {
+                "label": "Magtbalance"
+            },
+            "sub_7": {
+                "label": "EU"
+            },
+            "sub_8": {
+                "label": "USA"
+            },
+            "sub_9": {
+                "label": "Danmark"
+            },
+            "sub_10": {
+                "label": "FN"
+            },
+            "sub_11": {
+                "label": "Verdenskrig"
+            },
+            "sub_12": {
+                "label": "Alliance"
+            },
+            "sub_13": {
+                "label": "Korstog"
+            },
+            "sub_14": {
+                "label": "Nationalisme"
+            },
+            "sub_15": {
+                "label": "Ideologi"
+            },
+            "sub_16": {
+                "label": "Menneskerettigheder"
+            },
+            "sub_17": {
+                "label": "Kold krig "
+            },
+            "sub_18": {
+                "label": "Religion"
+            },
+            "sub_19": {
+                "label": "Fjender"
+            }
+        },
+        "edges": {
+            "Key_problem": {
+                "sub_1": {},
+                "sub_2": {},
+                "sub_3": {},
+                "sub_4": {},
+                "sub_5": {},
+                "sub_6": {},
+                "sub_7": {},
+                "sub_8": {},
+                "sub_9": {},
+                "sub_10": {},
+                "sub_11": {},
+                "sub_12": {},
+                "sub_13": {},
+                "sub_14": {},
+                "sub_15": {},
+                "sub_16": {},
+                "sub_17": {},
+                "sub_18": {},
+                "sub_19": {}
+            }
+        }
+    }, {
+        "nodes": {
+            "Key_problem": {
+                "color": "#05a0a8",
+                "label": "Områdestudium",
+                "shape": "dot"
+            },
+
+            "sub_1": {
+                "label": "Tyskland"
+            },
+            "sub_2": {
+                "label": "USA"
+            },
+            "sub_3": {
+                "label": "Kina"
+            },
+            "sub_4": {
+                "label": "Mellemøsten"
+            },
+            "sub_5": {
+                "label": "Tyrkiet"
+            },
+            "sub_6": {
+                "label": "Befolkning"
+            },
+            "sub_7": {
+                "label": "Kultur"
+            },
+            "sub_8": {
+                "label": "Religion"
+            },
+            "sub_9": {
+                "label": "Styreform"
+            },
+            "sub_10": {
+                "label": "Minoritet"
+            },
+            "sub_11": {
+                "label": "Ligestilling"
+            },
+            "sub_12": {
+                "label": "Demokrati"
+            },
+            "sub_13": {
+                "label": "Værdier"
+            },
+            "sub_14": {
+                "label": "Historie"
+            },
+            "sub_15": {
+                "label": "Flygtninge"
+            },
+            "sub_16": {
+                "label": "Menneskerettigheder"
+            },
+            "sub_17": {
+                "label": "Økonomi "
+            },
+            "sub_18": {
+                "label": "Ideologi"
+            },
+            "sub_19": {
+                "label": "Magt"
+            }
+        },
+        "edges": {
+            "Key_problem": {
+                "sub_1": {},
+                "sub_2": {},
+                "sub_3": {},
+                "sub_4": {},
+                "sub_5": {},
+                "sub_6": {},
+                "sub_7": {},
+                "sub_8": {},
+                "sub_9": {},
+                "sub_10": {},
+                "sub_11": {},
+                "sub_12": {},
+                "sub_13": {},
+                "sub_14": {},
+                "sub_15": {},
+                "sub_16": {},
+                "sub_17": {},
+                "sub_18": {},
+                "sub_19": {}
+            }
+        }
+    }],
     "DropDowns": [{
         "header": "Dropdown 1 headertext...",
         "obj": {
@@ -294,6 +725,12 @@
                 "value": "historienet.dk"
             }, {
                 "value": "danmarksstatistik.dk"
+            }, {
+                "value": "his2rie.dk"
+            }, {
+                "value": "folketinget.dk"
+            }, {
+                "value": "diis.dk"
             }]
         }
     }, {

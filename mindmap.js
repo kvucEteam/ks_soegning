@@ -9,7 +9,7 @@ var resizing = false;
 $(document).ready(function() {
     generate_tabs();
     make_mindmap(active_tab);
-    $(window).resize(resize_window);
+    //$(window).resize(resize_window);
     $(".search_container").width($(".container-fluid").width());
 });
 
@@ -188,11 +188,11 @@ function opdater_sogestreng() {
     $("#SearchText").val(soegestreng);
 }
 
-function h(e) {
-    $(e).css({ 'height': 'auto', 'overflow-y': 'hidden' }).height(e.scrollHeight);
+/*function h(e) {
+    $(e).css({ 'height': 'auto', 'overflow-y': 'hidden' }).height(e.scrollHeight - 20);
 }
 $('textarea').each(function() {
     h(this);
 }).on('input', function() {
     h(this);
-});
+});*/

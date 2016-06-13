@@ -7,6 +7,11 @@
     margin-bottom: 10px;
 }
 
+.btn-sm {
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+
 h1 {
     margin: 40px 0px;
     line-height: 1em;
@@ -43,8 +48,8 @@ h4 {
 
 
 /*
-	Således sættes farve på placeholders:
-	https://css-tricks.com/snippets/css/style-placeholder-text/
+    Således sættes farve på placeholders:
+    https://css-tricks.com/snippets/css/style-placeholder-text/
 */
 
 .ErrorColor::-webkit-input-placeholder {
@@ -115,48 +120,48 @@ img {
 .search_container{
     position: fixed;
     bottom: 14px;
-    background-color: rgba(244,248,246,.7);
-    padding: 20px 0px 10px 1px;
+    padding: 15px 0px 0px 1px;
     border-radius: 4px;
-
-    background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(transparent, #, transparent); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(transparent, rgba(244,248,246,1), transparent); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(transparent, rgba(244,248,246,1), transparent); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(transparent, #eee, transparent); /* Standard syntax */
-}
+    background: #f8f8f8; /* Standard syntax */
+    }
 
 #SearchText{
-	height: 32px;
-	margin-left: 0px;
+    height: 32px;
+    margin-left: 0px;
 
 }
 
 #Databases{
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 #Search{
-	    margin-top: 0px;
-    margin-left: -20px;
-    height: 32px;
+    margin-top: 1px;
+    height: 33px;
+    margin-left: ;
 }
 
 .main_content{
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .canvas_container{
-	    margin-top: -77px;
-    margin-bottom: -67px;
+        margin-top: -77px;
+        margin-bottom: -67px;
 
 }
 
 textarea{
-	resize:none;
+    resize:none;
 }
 
 .db_input{
-	top: 2px;
+    top: 2px;
+}
+
+#SearchText{
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #969696;
 }
 

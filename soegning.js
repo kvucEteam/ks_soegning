@@ -77,7 +77,7 @@ function ReturnURLPerameters(UlrVarObj) {
 function returnSearchInterface(jsonData) {
     var JDD = jsonData.DropDowns;
     var HTML = '<div id="DropDownInterface">';
-    HTML += '<input id="SearchText" type="text" placeholder="Skriv dine søgeord her..." /> <span class="ErrMsg"></span> <br/>';
+    HTML += '<input id="SearchText" type="text" placeholder="Skriv dine søgeord her eller tlføj ved at klikke på ordene" /> <span class="ErrMsg"></span> <br/>';
     for (var n in JDD) {
         HTML += '<div class="DropdownContainer"> ';
         // HTML += '<div class="DropdownHeader">'+JDD[n].header+'</div>';
@@ -113,6 +113,7 @@ $(document).on('click', "#Filters > .btn", function(event) {
 
         var slut = start + n_length;
         var ny_soegestreng = soegestreng.substring(0, start - 1) + soegestreng.substring(slut, soegestreng.length);
+        console.log("replace txt")
         soegestreng = ny_soegestreng;
     } else {
         console.log("hasnotClass");
@@ -130,6 +131,11 @@ $(document).on('click', "#Filters > .btn", function(event) {
 
 $(document).on('click', "#Search", function(event) {
 
+    if (get_GoogleCap() == true) {
+        console.log("BREAK");
+        return;
+    };
+
 
     var SearchText = $("#SearchText").val();
     console.log("Search - SearchText: " + SearchText);
@@ -140,7 +146,7 @@ $(document).on('click', "#Search", function(event) {
 
         console.log();
         Databases += ((index > 0) ? "+OR+" : "") + " site:" + $(this).attr("value");
-    console.log("Databases: " + Databases);
+        console.log("Databases: " + Databases);
     });
     console.log("Search - Databases: " + Databases);
 
@@ -186,8 +192,8 @@ $(document).on('click', "#Search", function(event) {
 
 $(document).ready(function() {
 
-$(".instr_container").html(instruction("Når du skal til eksamen, skal du vise, at du selv kan finde tekster og andet materiale, som bidrager til besvarelsen af din problemformulering. Her får du hjælp til at målrette din søgning."));
- $('#explanationWrapper').html(explanation("Udvælg først et af de overordnede emner til din søgning. Vælg herefter et eller flere relevante underemner til din søgning fra mindmappet ved at klikke på dem. Du kan også målrette eller vinkle din søgning yderligere i forhold til f.eks. tekstgenre eller holdning ved at vælge blandt “filtrene” på listen. Til sidst skal du beslutte, hvor du vil søge ud fra listen over medier og databaser nederst på siden. Du kan også selv tilføje ord og begreber i søgefeltet."));
+    $(".instr_container").html(instruction("Når du skal til eksamen, skal du vise, at du selv kan finde tekster og andet materiale, som bidrager til besvarelsen af din problemformulering. Her får du hjælp til at målrette din søgning."));
+    $('#explanationWrapper').html(explanation("Udvælg først et af de overordnede emner til din søgning. Vælg herefter et eller flere relevante underemner til din søgning fra mindmappet ved at klikke på dem. Du kan også målrette eller vinkle din søgning yderligere i forhold til f.eks. tekstgenre eller holdning ved at vælge blandt “filtrene” på listen. Til sidst skal du beslutte, hvor du vil søge ud fra listen over medier og databaser nederst på siden. Du kan også selv tilføje ord og begreber i søgefeltet."));
     var UlrVarObj = {
         "file": ""
     }; // Define a default file-refrence (empty) ---> "QuizData.json"
@@ -206,13 +212,13 @@ $(".instr_container").html(instruction("Når du skal til eksamen, skal du vise, 
 
     $("#Databases").prepend(returnCheckboxMarkup(jsonData.DropDowns[0].obj));
 
-    $(".btn_toggleDb").click(function(){
+    $(".btn_toggleDb").click(function() {
         $(this).toggleClass("selected");
-        if ($(this).hasClass("selected")){
-            $(".db_input").prop( "checked", false );
+        if ($(this).hasClass("selected")) {
+            $(".db_input").prop("checked", false);
             $(this).text("Tilføj alle");
-        }else{
-            $(".db_input").prop( "checked", true );
+        } else {
+            $(".db_input").prop("checked", true);
             $(this).text("Fjern alle");
         }
     });
@@ -231,7 +237,33 @@ $(".instr_container").html(instruction("Når du skal til eksamen, skal du vise, 
     ///////////////////////////////////////////////////
 
 
-    // $("#id_description_iframe").contents().find("body").html()
+    // $("#id_description_iframe").contents().fifnd("body").html()
 
     console.log("returnButtonSecection 2: " + returnButtonSecection(jsonData.DropDowns[0].obj));
+
+    ///// OPdater søgefelt
+
+    $("#SearchText").on('change keyup paste', function() {
+        //console.log($(this).val());
+        soegestreng = $(this).val();
+        console.log("SS: " + soegestreng);
+
+
+    });
 });
+
+function get_GoogleCap() {
+    var antalord = wordCount(soegestreng);
+    antalord = antalord.words;
+    var antaldatabaser = $("input:checked").length;
+    var total = antaldatabaser + antalord;
+    if (antalord < 1) {
+   UserMsgBox("body", "<h3>Du har ikke valgt nogle søgeord</h3><p>Klik på ordene i mindmappet, vælg filtre eller skriv ord i søgefeltets</p>");
+    } else if (antalord + antaldatabaser > 32) {
+        UserMsgBox("body", "<h3>For mange søgeord og databaser valgt</h3><p>Du har skrevet <b>" + antalord + "</b> søgeord og <b>" + antaldatabaser + "</b> databaser.</p><p>Din søgning må maksimalt indeholde 32 ord / databaser tilsammen.</p><p>Fjern <b>" + (total-32) + "</b> ord eller databaser og klik på søgeknappen igen");
+        var invalid = true;
+        return (invalid);
+    }
+
+
+}
