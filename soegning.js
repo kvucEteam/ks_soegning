@@ -239,6 +239,8 @@ $(document).ready(function() {
         soegestreng = $(this).val();
         //console.log("SS: " + soegestreng);
 
+    rotateCheck();
+
 
     });
 });
