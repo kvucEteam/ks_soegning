@@ -79,6 +79,14 @@ function make_mindmap(active_tab) {
 
     $(".SearchText").val("");
     soegestreng = "";
+    var filterknapper = $( "#Filters" ).find( ".btnPressed" ).length;
+
+    //alert(filterknapper);
+
+    for (var i = 0; i < filterknapper; i++){
+    soegestreng = soegestreng + $("#Filters").find(".btnPressed").eq(i).text() + " "; 
+    }
+    opdater_sogestreng();
 
     var c_width = $(".container-fluid").width();
 

@@ -253,7 +253,9 @@ function get_GoogleCap() {
     if (antalord < 1) {
         UserMsgBox("body", "<h3>Du har ikke valgt nogle søgeord</h3><p>Klik på ordene i mindmappet, vælg filtre eller skriv ord i søgefeltets</p>");
     } else if (antalord + antaldatabaser > 32) {
-        UserMsgBox("body", "<h3>For mange søgeord og databaser valgt</h3><p>Du har skrevet <b>" + antalord + "</b> søgeord og <b>" + antaldatabaser + "</b> databaser.</p><p>Din søgning må maksimalt indeholde 32 ord / databaser tilsammen.</p><p>Fjern <b>" + (total - 32) + "</b> ord eller databaser og klik på søgeknappen igen");
+
+
+        UserMsgBox("body", "<h3>For mange søgeord og databaser valgt</h3><p> Du har tilføjet <b>" + antalord + "</b> søgeord og <b>" + antaldatabaser + "</b> databaser.</p><p>Tilsammen må dine søgeord og databaser maksimalt udgøre 32 tilvalg. </p><p>Fjern <b>" + (total - 32) + "</b> ord eller databaser og klik på søgeknappen igen.");
         var invalid = true;
         return (invalid);
     }
