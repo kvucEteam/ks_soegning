@@ -7,6 +7,7 @@ var soegestreng = "";
 var resizing = false;
 
 $(document).ready(function() {
+    rotateCheck();
     generate_tabs();
     make_mindmap(active_tab);
     //$(window).resize(resize_window);
@@ -86,6 +87,8 @@ function make_mindmap(active_tab) {
     for (var i = 0; i < filterknapper; i++){
     soegestreng = soegestreng + $("#Filters").find(".btnPressed").eq(i).text() + " "; 
     }
+
+
     opdater_sogestreng();
 
     var c_width = $(".container-fluid").width();
@@ -124,9 +127,6 @@ function make_mindmap(active_tab) {
 
         if (selected.node !== null) {
             selected = (nearest.distance < 50) ? nearest : null;
-
-
-
 
             console.log(selected);
             console.log(selected.node._id + selected.node.data.label);
@@ -186,10 +186,12 @@ function make_mindmap(active_tab) {
         }
         return false;
     });
-
+console.log("")
 }
 
 function opdater_sogestreng() {
+
+
 
     $("#SearchTextParent").fadeOut(0);
     $("#SearchTextParent").fadeIn(500);
