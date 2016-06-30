@@ -122,7 +122,8 @@ img {
     bottom: 14px;
     padding: 15px 0px 0px 1px;
     border-radius: 4px;
-    background: #f8f8f8; /* Standard syntax */
+    
+    background: rgba(248, 248, 246, .8);
     }
 
 #SearchText{

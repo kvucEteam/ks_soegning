@@ -86,7 +86,7 @@ function make_mindmap(active_tab) {
     for (var i = 0; i < filterknapper; i++){
     soegestreng = soegestreng + $("#Filters").find(".btnPressed").eq(i).text() + " "; 
     }
-    opdater_sogestreng();
+  
 
     var c_width = $(".container-fluid").width();
 
@@ -113,6 +113,30 @@ function make_mindmap(active_tab) {
     var data = jsonData.Key_probs[active_tab];
 
     sys.graft(data);
+
+    console.log(data);
+
+    /*for (var i in data.nodes){
+        //console.log("i: " + i);
+        if(i != "Key_problem"){
+            data.nodes[i].color = "white";
+            data.nodes[i].shape = "";
+        }
+    }*/
+    
+       for (var i in data.nodes){
+        //console.log("i: " + i);
+        if(data.nodes[i].shape == "selected"){
+             
+            soegestreng = soegestreng + data.nodes[i].label + " ";
+        }
+    }
+
+      opdater_sogestreng();
+
+
+    
+
     sys.screenPadding(0, 0, 0, 0);
 
     $("canvas").mousedown(function(e) {
