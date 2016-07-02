@@ -182,8 +182,13 @@ $(document).on('click', "#Search", function(event) {
 
 $(document).ready(function() {
 
-    $("#explanationWrapper").html(explanation("Når du skal til eksamen, skal du vise, at du selv kan finde tekster og andet materiale, som bidrager til besvarelsen af din problemformulering. Her får du hjælp til at målrette din søgning."));
-    $('.instr_container').html(instruction("Udvælg først et af de overordnede emner til din søgning. <br/>Vælg herefter et eller flere relevante underemner til din søgning fra mindmappet ved at klikke på dem. <br/>Du kan også målrette eller vinkle din søgning yderligere i forhold til f.eks. tekstgenre eller holdning ved at vælge blandt “filtrene” på listen. <br/>Til sidst skal du beslutte, hvor du vil søge ud fra listen over medier og databaser nederst på siden. <br/>Du kan også selv tilføje ord og begreber i søgefeltet."));
+    $("#explanationWrapper").html(explanation("Til eksamen skal du inddrage selvfundet bilagsmateriale, som bidrager til besvarelsen af din problemformulering. Her får du hjælp til at målrette din søgning efter materiale."));
+    $('.instr_container').html(instruction("Udvælg et af de overordnede emner til din søgning. Vælg herefter relevante underemner fra mindmappet ved at klikke på dem. Du kan også målrette din søgning i forhold til teksttype ved at klikke på de listede filtre. Til sidst skal du tilføje, hvilke medier og databaser, du vil bruge til søgning."));
+    
+
+
+
+
     var UlrVarObj = {
         "file": ""
     }; // Define a default file-refrence (empty) ---> "QuizData.json"
