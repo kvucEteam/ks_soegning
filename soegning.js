@@ -183,7 +183,7 @@ $(document).on('click', "#Search", function(event) {
 $(document).ready(function() {
 
     $("#explanationWrapper").html(explanation("Til eksamen skal du inddrage selvfundet bilagsmateriale, som bidrager til besvarelsen af din problemformulering. Her får du hjælp til at målrette din søgning efter materiale."));
-    $('.instr_container').html(instruction("Udvælg et af de overordnede emner til din søgning. Vælg herefter relevante underemner fra mindmappet ved at klikke på dem. Du kan også målrette din søgning i forhold til teksttype ved at klikke på de listede filtre. Til sidst skal du tilføje, hvilke medier og databaser, du vil bruge til søgning."));
+    $('.instr_container').html(instruction("Udvælg et af de overordnede emner til din søgning. Vælg herefter relevante underemner fra mindmappet ved at klikke på dem. Du kan også målrette din søgning i forhold til teksttype ved at klikke på de listede filtre. Til sidst skal du tilføje, hvilke medier og databaser, du vil bruge til din søgning."));
     
 
 
